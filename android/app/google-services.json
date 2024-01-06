@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "77215946885",
+    "project_id": "tvoishop",
+    "storage_bucket": "tvoishop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77215946885:android:b456acd2599e2d1f43f1ec",
+        "android_client_info": {
+          "package_name": "com.pushnotificationscli"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATRl4MLiexwRM-VoSI0yrdzL0nZMscBAY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

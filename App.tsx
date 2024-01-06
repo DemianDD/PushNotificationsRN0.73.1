@@ -5,7 +5,7 @@
  * @format
  */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import type {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
@@ -24,6 +24,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import { requestUserPermission, NotificationListener } from './src/utils/pushnotification_service';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -61,6 +62,11 @@ function App(): React.JSX.Element {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+
+  useEffect(() => {
+    requestUserPermission();
+    NotificationListener();
+  }, [])
 
   return (
     <SafeAreaView style={backgroundStyle}>
